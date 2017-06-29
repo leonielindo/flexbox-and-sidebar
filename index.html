@@ -1,0 +1,96 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Flexbox and Side Bar Exercise</title>
+  <meta name="description" content="Flexbox and Side Bar Exercise">
+  <meta name="Leonie Lindo" content="Flexbox and Side Bar Exercise">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="assets/styles/styles.css">
+</head>
+
+<body role="document">
+  <header>
+    <nav role="navigation">
+      <a role="link"  class="nav-active" href="/index.html">Home</a>
+      <a role="link" href="about.html">About</a>
+      <a role="link" href="blog.html">Blog</a>
+      <a id="sidebar-trigger" href="">Sidebar</a>
+    </nav>
+  </header>
+  <main role="main">
+    <section class="col-70" role="region">
+      <h1 role="heading" class="hidden">Welcome to Flexbox and Side Bar exercise</h1>
+      <div class="content">
+        <article class="article">
+          <figure>
+            <img src="assets/images/1.jpg" alt="architecture" />
+          </figure>
+          <h2 class="article__heading">Architecture</h2>
+          <div class="article__description">
+            <p>Architecture a colourful story</p>
+          </div>
+        </article>
+        <article class="article">
+          <figure>
+            <img src="assets/images/2.jpg" alt="Coast at night" />
+          </figure>
+          <h2 class="article__heading">Coast at night</h2>
+          <div class="article__description">
+            <p>Beautiful coast at night</p>
+          </div>
+        </article>
+        <article class="article">
+          <figure>
+            <img src="assets/images/3.jpg" alt="A duck" />
+          </figure>
+          <h2 class="article__heading">A duck</h2>
+          <div class="article__description">
+            <p>Duck chilling out</p>
+          </div>
+        </article>
+        <article class="article">
+          <figure>
+            <img src="assets/images/4.jpg" alt="Colourful glass buildings" />
+          </figure>
+          <h2 class="article__heading">Colourful glass buildings</h2>
+          <div class="article__description">
+            <p>Colourful glass buildings in the city</p>
+          </div>
+        </article>
+        <article class="article">
+          <figure>
+            <img src="assets/images/5.jpg" alt="Rear view mirror" />
+          </figure>
+          <h2 class="article__heading">Rear view mirror</h2>
+          <div class="article__description">
+            <p>Rear view mirror leave it all behind</p>
+          </div>
+        </article>
+        <article class="article">
+          <figure>
+            <img src="assets/images/6.jpg" alt="Chrome Oil gauge" />
+          </figure>
+          <h2 class="article__heading">Oil gauge</h2>
+          <div class="article__description">
+            <p>Oil gauge on a bike</p>
+          </div>
+        </article>
+    </div>
+    </section>
+    <aside role="complementary" class="aside sidebar col-30">
+        <p>Side bar content can be placed here</p>
+    </aside>
+  </main>
+  <footer role="contentinfo" class="footer">
+    <div class="footer__content">
+      <p>&copy; 2017 Leonie Lindo Flexbox and Side Bar Exercise</p>
+    </div>
+  </footer>
+  <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js'></script>
+  <script src="scripts/modernizr-custom.js"></script>
+  <script src="scripts/sidebar.js"></script>
+</body>
+</html>

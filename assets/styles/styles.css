@@ -1,0 +1,156 @@
+body {
+  background: #fff;
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.875em; /* 14px */
+  line-height: 1.4;
+}
+h1, h2, p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 1rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-family: serif;
+  font-weight: lighter;
+  color: #222;
+}
+
+p {
+  line-height: 1.6;
+}
+
+a, a:link {
+  color: #555;
+  text-decoration: none;
+}
+a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* helpers */
+.hidden {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+
+[class*="col-"] {
+  margin-left: 20px;
+}
+
+.col-70 {
+  width: 70%;
+}
+.col-30 {
+  width: 30%;
+}
+/* main structures */
+header {
+  padding: 20px 20px 0 20px;
+  box-shadow: 0 1px 5px rgba(0,0,0,.6);
+  position: relative;
+  z-index:2;
+}
+main {
+  padding-top: 20px;
+  display: flex;
+  position: relative;
+}
+
+footer {
+  padding: 20px;
+  width: 100%;
+}
+
+aside {
+  margin-left: 0;
+}
+
+nav a {
+  display: inline-block;
+  margin-right: 20px;
+  padding-bottom: 7px;
+}
+
+nav a:hover {
+  border-bottom: 3px solid #ccc;
+  text-decoration: none;
+}
+nav .nav-active {
+  border-bottom: 3px solid #2182cd;
+}
+
+figure {
+  margin: 0;
+}
+
+/* content */
+.content {
+  display: -webkit-flex;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  position: relative;
+}
+
+/* articles */
+.article {
+  width: 266px;
+  margin-right:20px;
+  min-height: 272px;
+}
+.article__heading {
+  padding: 15px 0;
+  margin: 0;
+}
+.article__description {
+  padding-right: 15px;
+}
+.article__description p{
+  color: #777;
+}
+
+/* footer */
+.footer {
+  margin-top: 70px;
+  background-color: #444;
+}
+.footer__content {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+
+/* aside  */
+.aside {
+  margin-right:20px;
+}
+/* sidebar */
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  right: -20px;
+  height: 100%;
+  width: 0;
+  background-color: #ccc;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: 1s, width 0.5s;
+   transition: 1s, width 0.5s;
+}
+.sidebar-active {
+  opacity: 1;
+  width: 30%;
+}
